@@ -116,10 +116,13 @@
         }
         .main_content {
             display: grid;
-            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-columns: 1fr minmax(100px, 2fr) minmax(100px, 1fr);
             grid-template-rows: 1fr 1fr 1fr;
             padding-left: 20px;
             grid-gap:15px;
+        }
+        .main_content p {
+            font-size:1em;
         }
         .main_content h2 {
             border: 1px;
